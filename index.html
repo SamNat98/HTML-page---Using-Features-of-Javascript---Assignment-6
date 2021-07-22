@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     * {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+    </style>
+</head>
+<body style="background-color: peachpuff;">
+    <br>
+    <h1 style="text-align: center;">Webpage demonstrating different Features of Javascript</h1>
+    <br>
+
+    <!-- First Three Images -->
+    <div class="row">
+        <div class="column">
+          <img src="img/1.jpg" style="width:500px; height:500px;" onmouseover="change()" onmouseout="reverse()" id="i1">
+        </div>
+        <div class="column">
+          <img src="img/2.jpg" style="width:500px; height:500px;" onmouseover="change2()" onmouseout="reverse2()" id="i2">
+        </div>
+        <div class="column">
+            <img src="img/5.jpeg" style="width:500px; height:500px;" id="i3" onmouseover="change3()" onmouseout="reverse3()">
+          </div>
+      </div>
+      <br>
+      <br>
+
+
+      <!-- Middle Text -->
+      <h1 style="text-align: center;">Scroll Down for More</h1>
+      <div class="row">
+        <div class="column">
+          <h2 id="p1">Hi,there click next to reveal what's more</h2>
+          <br>
+          <button type="button" onclick="secondOne()" style="font-size: 20px; border: black solid;">Next</button>
+        </div>
+        <div class="column">
+            <h2 style="visibility: hidden;" id="p2" style="font-size: 20px;">Click my "Next" too to reveal more</h2>
+            <br>
+            <button type="button" onclick="thirdOne()" id="b2" style="visibility: hidden; font-size: 20px; border: black solid;">Next</button>
+        </div>
+        <div class="column">
+            <h2 id="p3" style="visibility: hidden; font-size: 20px;">Hi,I am the last one click my "Button" to change it All</h2>
+            <br>
+            <button type="button" onclick="fourthOne()" id="b3" style="visibility: hidden; font-size: 20px; border: black solid;">Change All THREE</button>
+            <br>
+          </div>
+      </div>
+      <br>
+
+      
+      <!-- Last Three Images -->
+      <h1 style="text-align: center; scroll-behavior: auto;">Scroll Down for More</h1>
+      <br>
+      <div class="row" id="the_div_id">
+        <div class="column">
+            <img src="img/7.jpg" style="width:500px; height:500px;" class="imgss">
+          <br>
+        </div>
+        <div class="column">
+            <img src="img/8.jpeg" style="width:500px; height:500px;" class="imgss">
+            <br>
+            <br>
+            <button type="button" onclick="imageOne()" style="font-size: 23px; border: black solid;">Hide All Three Images</button>
+            <button type="button" onclick="imageTwo()" style="font-size: 23px; border: black solid;">Show All Three Images</button>
+        </div>
+        <div class="column">
+            <img src="img/9.jpg" style="width:500px; height:500px;" class="imgss">
+            <br>
+            <br>
+          </div>
+      </div>
+      <br>
+      
+
+
+    <script src="1.js">
+
+    </script>
+</body>
+</html>
